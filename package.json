@@ -1,0 +1,23 @@
+{
+  "name": "learn-api-test",
+  "version": "1.0.0",
+  "description": "starter repository to learn api test with javascript",
+  "dependencies": {
+    "chai": "4.2.0",
+    "supertest": "4.0.2",
+    "mocha": "8.1.0"
+  },
+  "scripts": {
+    "test": "mocha ./mytest.js --timeout 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atlasidtech/learn-api-test-js.git"
+  },
+  "author": "atlas team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atlasidtech/learn-api-test-js/issues"
+  },
+  "homepage": "https://github.com/atlasidtech/learn-api-test-js#readme"
+}
