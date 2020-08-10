@@ -43,28 +43,28 @@ function deleteUser() {
 }
 
 describe('@get user', () => {
-  it(`@get it success get user list data`, async () => {
+  it(`@get user success get user list data`, async () => {
     const response = await getUserList();
     expect(response.status).to.equal(200);
   });
 });
 
 describe('@post user', () => {
-  it(`@post it success post user data`, async () => {
+  it(`@post user success post user data`, async () => {
     const response = await postUser(postData);
     expect(response.status).to.equal(201);
   });
 });
 
 describe('@put user', () => {
-  it(`@put it success put user data`, async () => {
+  it(`@put user success put user data`, async () => {
     const response = await putUser(putData);
     expect(response.status).to.equal(200);
   });
 });
 
 describe('@delete user', () => {
-  it(`@delete it success put user data`, async () => {
+  it(`@delete user success put user data`, async () => {
     const response = await deleteUser();
     expect(response.status).to.equal(204);
   });
