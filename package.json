@@ -10,7 +10,7 @@
   },
   "scripts": {
     "test": "mocha ./mytest.js --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 10000",
-    "test-rec": "mocha ./tests --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 10000"
+    "test-po": "mocha ./tests --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 10000"
   },
   "repository": {
     "type": "git",

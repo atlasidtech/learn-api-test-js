@@ -6,8 +6,8 @@ const api = supertest('https://reqres.in/api');
 const path = '/users';
 
 const postData = {
-  "name": "morpheus",
-  "job": "zion resident"
+  "name": "mandra",
+  "job": "blezisky"
 }
 
 const putData = {
