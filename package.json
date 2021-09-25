@@ -4,13 +4,23 @@
   "description": "starter repository to learn api test with javascript",
   "dependencies": {
     "chai": "4.2.0",
+    "chai-json-schema": "^1.5.1",
     "dotenv": "^8.2.0",
+    "install": "^0.13.0",
     "mocha": "8.1.0",
+    "npm": "^6.14.8",
     "supertest": "4.0.2"
   },
   "scripts": {
-    "test": "mocha ./mytest.js --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 10000",
-    "test-po": "mocha ./tests --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 10000"
+    "test": "mocha ./tests --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 30000",
+    "test-tag": "mocha ./tests --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 30000 --grep @regression",
+    "test-tag-and": "mocha ./tests --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 30000 --grep @smoke --grep @regression",
+    "test-tag-or": "mocha ./tests --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 30000 --grep '@put|get'",
+    "test-data": "mocha ./tests --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 30000 --grep @postdata",
+    "test-deep": "mocha ./tests --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 30000 --grep @deep",
+    "test-before": "mocha ./tests --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 30000 --grep @beforetest",
+    "test-schema": "mocha ./tests --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 30000 --grep @schema",
+    "test-parallel": "mocha ./tests --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 30000 --parallel"
   },
   "repository": {
     "type": "git",

@@ -12,6 +12,13 @@ function getUserList() {
     .set('Content-Type', 'application/json');
 }
 
+function getSingleUser(id) {
+  return api.get(`${path}/${id}`)
+    .set('Accept', 'application/json')
+    .set('Content-Type', 'application/json');
+}
+
 module.exports = {
   getUserList,
+  getSingleUser
 }
